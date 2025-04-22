@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website bán xe sang cao cấp" />
+  <title>Trang chủ – Bán Xe Sang</title>
+
+  <!-- Link đến stylesheet chung -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Nav ===== -->
+  <header>
+    <div class="container">
+      <nav>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="Xe Sang Logo" /> <!-- Đặt ảnh logo -->
+          <span class="logo-text">NEU Auto</span> 
+        </a>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="careers.html">Tuyển dụng</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="#" id="nav-login">Đăng nhập</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Overlay & Login Modal ===== -->
+  <div id="overlay" class="overlay hidden"></div>
+
+  <div id="login-modal" class="modal hidden">
+    <div class="modal-header">
+      <h3>Đăng nhập</h3>
+      <button id="close-modal" class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label for="login-user">Tên người dùng hoặc địa chỉ email</label>
+        <input type="text" id="login-user" placeholder="Nhập tên hoặc email">
+      </div>
+      <div class="form-group">
+        <label for="login-pass">Mật khẩu</label>
+        <div class="input-with-icon">
+          <input type="password" id="login-pass" placeholder="Nhập mật khẩu">
+          <button type="button" class="toggle-visibility" aria-label="Hiện mật khẩu">👁️</button>
+        </div>
+      </div>
+      <div class="form-options">
+        <label><input type="checkbox" id="remember"> Ghi nhớ</label>
+        <a href="#" class="forgot">Quên mật khẩu?</a>
+      </div>
+      <button id="btn-login" class="btn-primary">Đăng nhập</button>
+    </div>
+  </div>
+
+  <!-- ===== Hero Section / Banner ===== -->
+  <section class="hero-contact">
+    <div class="container hero-content">
+      <h2 class="hero-subtitle">Liên hệ</h2>
+      <h1>Gửi mọi thắc mắc của bạn đến với chúng tôi!</h1>  
+      <p>Đội ngũ nhân viên sẽ trả lời bạn trong thời gian sớm nhất.</p>
+    </div>
+  </section>
+    
+  <!-- ===== Team & Contact Info ===== -->
+<section class="contact-team">
+  <div class="container">
+    <!-- Row 1: 2 profile cards -->
+    <div class="team-cards">
+      <div class="team-card">
+        <img src="images/le-thanh-ha.jpg" alt="Lê Thanh Hà">
+        <div class="team-overlay">
+          <h3>Lê Thanh Hà</h3>
+          <p>CEO</p>
+          <p>SDT: 0961654937</p>
+          <p>Email: thanhhale2808@gmail.com</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/nguyen-van-tho.jpg" alt="Nguyễn Văn Thọ">
+        <div class="team-overlay">
+          <h3>Nguyễn Văn Thọ</h3>
+          <p>Trưởng Ban Kinh doanh</p>
+          <p>SDT: 0987654321</p>
+          <p>Email:hahaha@gmail.com
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: 3 info cards -->
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="info-icon">📍</div>
+        <h4>Địa chỉ</h4>
+        <p>Đại học Kinh tế Quốc dân, 207 Giải Phóng, Phường Đồng Tâm, Q. Hai Bà Trưng, TP. Hà Nội</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">✉️</div>
+        <h4>Email</h4>
+        <p>boyneu2808@gmail.com</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">💬</div>
+        <h4>Fanpage</h4>
+        <p><a href="https://www.facebook.com/thanhhale2808" target="_blank">facebook.com/neuauto</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact Form Section ===== -->
+<section class="contact-section">
+  <div class="container contact-wrapper">
+    <!-- Ảnh bên trái -->
+    <div class="contact-image">
+      <img src="images/contact-person.jpg" alt="NEU Auto Contact">
+    </div>
+
+    <!-- Form bên phải -->
+    <form class="contact-form" action="#" method="post">
+      <h2>Liên hệ</h2>
+      <p>Nội dung form dưới sẽ được chuyển thẳng tới hộp thư của chúng mình nên bạn đừng lo nhé!</p>
+
+      <label for="name">Họ và tên*</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Tiêu đề*</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Nội dung</label>
+      <textarea id="message" name="message" rows="6"></textarea>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  <script src="js/scripts.js"></script>
+
+<!-- ===== Site Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <!-- Cột Liên hệ -->
+    <div class="footer-col">
+      <h4>Liên hệ</h4>
+      <p><strong>Email:</strong> boyneu2808@gmail.com</p>
+      <p><strong>Địa chỉ:</strong> Đại học Kinh tế Quốc dân, 207 Giải Phóng, Phường Đồng Tâm, Q. Hai Bà Trưng, Hà Nội</p>
+      <p><strong>SDT:</strong> (+84) 961 654 937</p>
+    </div>
+
+    <!-- Cột Liên kết nhanh -->
+    <div class="footer-col">
+      <h4>Liên kết nhanh</h4>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="news.html">NEU Auto News</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright: ©2024 - NEU Auto. All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
